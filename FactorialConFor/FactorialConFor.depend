@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1553696733 source:d:\ignaciocorimayo\programacion-1\factorialconfor\main.c
+	<stdio.h>
+	<stdlib.h>
+

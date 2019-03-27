@@ -3,6 +3,7 @@
 
 int sumar (int x, int y);
 int restar (int x, int y);
+int dividir (int x, int y);
 int multiplicar (int x, int y);
 
 int main()
@@ -11,6 +12,7 @@ int main()
     int num2;
     int suma;
     int resta;
+    int division;
     int multiplicacion;
 
     printf("Ingrese un numero: ");
@@ -21,11 +23,13 @@ int main()
 
     suma = sumar (num1, num2);
     resta = restar (num1, num2);
+    division = dividir (num1, num2);
     multiplicacion = multiplicar (num1, num2);
 
-    printf ("El resultado de A+B es: %d", suma);
-    //printf("El resultado de A-B es: %d", resta);//
-    printf("El resultado de A*B es : %d", multiplicacion);
+    printf("El resultado de A+B es: %d \n", suma);
+    printf("El resultado de A-B es: %d \n", resta);
+    printf("El resultado de A/B es: %d \n", division);
+    printf("El resultado de A*B es : %d \n", multiplicacion);
 
     return 0;
 }
@@ -40,10 +44,16 @@ int sumar (int x, int y)
 int restar (int x, int y)
 {
     int resta;
-    resta = x - y;
+    resta = x-y;
     return resta;
 }
 
+int dividir (int x, int y)
+{
+    int division;
+    division = x/y;
+    return division;
+}
 int multiplicar (int x, int y)
 {
     int multiplicacion;
