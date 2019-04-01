@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-int sumar (int x, int y);
-int restar (int x, int y);
-int dividir (float x, float y);
-int multiplicar (int x, int y);
-int factorial (int x, int y);
+void sumar (int x, int y);
+void restar (int x, int y);
+void dividir (float x, float y);
+void multiplicar (int x, int y);
+void factorial (int x, int y);
 
 int main()
 {
@@ -24,36 +23,32 @@ int main()
     printf("Ingrese otro numero: ");
     scanf("%d", &num2);
 
-    suma = sumar (num1, num2);
-    resta = restar (num1, num2);
-    division = dividir  (num1, num2);
-    multiplicacion = multiplicar (num1, num2);
-    factor = factorial (num1, num2);
+    sumar (num1, num2);
+    restar (num1, num2);
+    dividir  (num1, num2);
+    multiplicar (num1, num2);
+    factorial (num1, num2);
 
     return 0;
 }
 
-int sumar (int x, int y)
+void sumar (int x, int y)
 {
     int suma;
     suma = x + y;
 
     printf("El resultado de A+B es: %d \n", suma);
-
-    return suma;
 }
 
-int restar (int x, int y)
+void restar (int x, int y)
 {
     int resta;
     resta = x-y;
 
     printf("El resultado de A-B es: %d \n", resta);
-
-    return resta;
 }
 
-int dividir (float x, float y)
+void dividir (float x, float y)
 {
     float division;
     division = x/y;
@@ -66,21 +61,17 @@ int dividir (float x, float y)
     {
         printf("El resultado de A/B es: %.1f \n", division);
     }
-
-    return division;
 }
 
-int multiplicar (int x, int y)
+void multiplicar (int x, int y)
 {
     int multiplicacion;
     multiplicacion = x * y;
 
     printf("El resultado de A*B es : %d \n", multiplicacion);
-
-    return multiplicacion;
 }
 
-int factorial (int x, int y)
+void factorial (int x, int y)
 {
     int factorial;
     int contador;
@@ -100,7 +91,7 @@ int factorial (int x, int y)
             contador++;
         }
 
-        printf("El factorial de %d es: %d \n", x, factorial);
+        printf("El factorial de %d es: %d Y ", x, factorial);
     }
     else
     {
@@ -115,14 +106,10 @@ int factorial (int x, int y)
             contador2++;
         }
 
-        printf("El factorial de %d es: %d \n", y, factorial2);
+        printf("El factorial de %d es: %d", y, factorial2);
     }
     else
     {
         printf("El segundo numero no tiene factorial \n");
     }
-
-    return factorial;
 }
-
-
