@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1554172974 source:d:\programación\programacion-1\prueba\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1554315301 source:c:\users\alumno\desktop\programacion-1\prueba\main.c
+	<stdio.h>
+	<stdlib.h>
+	"operaciones.h"
+	"menu.h"
+
+1554310417 c:\users\alumno\desktop\programacion-1\prueba\operaciones.h
+
+1554310831 c:\users\alumno\desktop\programacion-1\prueba\menu.h
+
+1554310324 source:c:\users\alumno\desktop\programacion-1\prueba\menu.c
+
+1554310413 source:c:\users\alumno\desktop\programacion-1\prueba\operaciones.c
+
